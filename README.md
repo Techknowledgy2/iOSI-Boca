@@ -38,7 +38,7 @@ Our full-time iOS Development Immersive is as 12-week full-time program made up 
 | Role                      | Name               | Slack               | Email                    | GitHub |
 |---------------------------|--------------------|:-------------------:|:------------------------:|:------:|
 | **Instructor**            | Hikarus 光龍 Guijarro-Fayard     | @hikarus              | hikarus.guijarro-fayard@generalassemb.ly  | [Hikarus](https://github.com/sirwellington)|
-| **Instructor Support**            | Michael Wilkowski      | @michaelscarn            | michael.wilkowski@generalassemb.ly             | [wilks7](https://github.com/wilks7) |
+| **Instructor **            | Michael Wilkowski      | @michaelscarn            | michael.wilkowski@generalassemb.ly             | [wilks7](https://github.com/wilks7) |
 | **Instructor Support**            | Travis Holt    | @trvslhlt           | travis.holt@generalassemb.ly          | [Travis](https://github.com/wilks7) |
 
 
