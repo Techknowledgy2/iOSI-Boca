@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) IOS Immersive - NY Curriculum
+# IOS Immersive
 
 Welcome to General Assembly's IOS Immersive in LA! We are building a local community of lifelong learners who are excited about developing mobile applications to solve real world problems.
 
