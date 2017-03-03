@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+        <title>Login</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="Content-Script-Type" content="type" />
+        <link rel="icon" type="image/ico" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/baseINID.css" />
+        <link rel="stylesheet" type="text/css" href="/INID.css" />
+<script type="text/css"><!--
+<style id="antiClickjack" type="text/css">body{display:none;}</style>
+//-->
+</script>
+    <script language="javascript" type="text/javascript"><!--
+  adImages=new Array('/images/Block1.gif','/images/Block3.gif','/images/Block5.gif','/images/Block7.gif','/images/Block9.gif','/images/Block11.gif','/images/Block14.gif')
+  thisAd=0
+  imgCt=adImages.length
+if (self == top) {
+    var antiClickjack = document.getElementById("antiClickjack");
+    antiClickjack.parentNode.removeChild(antiClickjack);
+} else {
+    top.location = self.location;
+}
+function isWinIE6() {
+                var ua = navigator.userAgent;
+				var msieOffset = ua.indexOf("MSIE ");
+                if (msieOffset == -1) {
+					return false;
+				}
+
+				if (ua.indexOf("Win") == -1) {
+					return false;
+				}
+
+                var ieVersion = parseFloat(ua.substring(msieOffset + 5, ua.indexOf(";", msieOffset)));
+                return ieVersion < 7.0;
+}
+
+addHoverToInputButtons = function() {
+                if (!isWinIE6())
+					return;var sfEls = [];
+
+				var sfInput = document.getElementsByTagName("INPUT");
+                for (var i=0; i<sfInput.length; i++) {
+					sfEls.push(sfInput[i])
+				};
+
+                var sfDiv = document.getElementsByTagName("DIV");
+                for (var i=0; i<sfDiv.length; i++) {
+					sfEls.push(sfDiv[i])
+				};
+
+                for (var i=0; i<sfEls.length; i++) {
+                    if (sfEls[i].className.indexOf("cssbtn") >= 0) {
+                        var hclass = "ie6hovermedium";
+
+                        if (sfEls[i].className.indexOf("light") >= 0)
+							hclass = "ie6hoversmalllight";
+                        else if (sfEls[i].className.indexOf("smallbtn") >= 0)
+							hclass = "ie6hoversmall";
+                        else if (sfEls[i].className.indexOf("largebtn") >= 0)
+							hclass = "ie6hoverlarge";
+
+                        sfEls[i].hoverClassName = hclass;
+
+                        sfEls[i].onmouseover = function() {
+							this.className += " " + this.hoverClassName;
+						};
+
+						sfEls[i].onmouseout = function() {
+							this.className=this.className.replace(new RegExp(" " + this.hoverClassName + "\\b"), "");
+						};
+                    }
+                }
+};
+
+if (window.attachEvent)
+	window.attachEvent("onload", addHoverToInputButtons);
+
+function help_popup(link)
+{
+if (! window.focus) return true;
+window.open(link, 'HelpWin', 'toolbar=no,menubar=no,location=no,dependent,fullscreen=no,resizable,scrollbars,height=500,width=600,left=150,top=150');
+return false;
+}
+  function rotate(){
+	if (document.images) {
+		thisAd++
+		if (thisAd==imgCt){
+			thisAd=0
+		}
+		document.adBanner.src=adImages[thisAd]
+		setTimeout('rotate()',200)
+	}
+  }
+  function reloadPage()
+  {
+          if (document.forms[0].hidden.value == "refresh") {
+      setTimeout("self.location.replace('http://192.168.1.254/cgi-bin/lanstatistics.ha')", 5000)
+      rotate()
+    }
+    if (document.forms[0].hidden.value == "update_refresh") {
+      rotate()
+    }
+    else if (document.forms[0].hidden.value == "freshen") {
+      setTimeout("self.location.reload(true)", 10000)
+      rotate()
+    }
+    else if (document.forms[0].hidden.value == "wpsrefresh") {
+      setTimeout("self.location.reload(true)", 25000)
+    }
+  }
+  function isWinIE() {
+    var ua = navigator.userAgent;
+    var msieOffset = ua.indexOf("MSIE ");
+    if (msieOffset == -1) {
+      return false;
+    }
+    if (ua.indexOf("Win") == -1) {
+      return false;
+    }
+    return true;
+  }
+  addHoverToInputButtons = function() {
+    if (!isWinIE()) return;
+    var sfEls = document.getElementsByTagName("INPUT");
+    for (var i=0; i<sfEls.length; i++) {
+      var hclass = "iehovermedium";
+      if (sfEls[i].className.indexOf("buttonclasssmall") >= 0) hclass = "iehoversmall";
+      else if (sfEls[i].className.indexOf("buttonclasslarge") >= 0) hclass = "iehoverlarge";
+      else if (sfEls[i].className.indexOf("buttonclass") >= 0) hclass = "iehovermedium";
+      sfEls[i].hoverClassName = hclass;
+      sfEls[i].onmouseover=function() {
+        this.className += " " + this.hoverClassName;
+      };
+      sfEls[i].onmouseout=function() {
+        this.className=this.className.replace(new RegExp(" " + this.hoverClassName + "\\b"), "");
+      };
+    }
+  };
+  if (window.attachEvent) window.attachEvent("onload", addHoverToInputButtons);
+//-->
+</script>
+    </head>
+           <body>
+  <div id="wrapper">
+    <div id="whole-page">
+  <div id="main-content" style="min-height:0px;" >
+    <div style="clear: both;"></div>
+     <div style="background: #ffffff;">
+       <div id="secondary-navigation">
+         <div id="logo-div"><img id="main-logo" src="/images/att_logo.png" alt="" /><img id="our-logo" src="/images/our_logo.png" alt="" /></div>
+       </div>
+       <div style="text-align: center;">
+         <div style="text-align: center;">
+         <h1 style="text-align:center;">
+Access Code Required
+</h1>
+         <div class="col1" style="text-align:center">The page you requested is protected. You must enter the Device Access Code in order to continue.<br /><br />
+         The Default Access Code is printed on the side or bottom of your NVG589 device, but you can change it.<br /><br />
+<form method="post" action="/cgi-bin/login.ha">
+<input type="hidden" name="nonce" value="34f5d6b40006013f61a9c4c99f2d9a6102e07df6bb526948" />
+         <table align="center" summary="Table for entering username and password as appropriate">
+         <tr><th scope="row" align="right"><label for="password">Device Access Code</label></th><td><input id="password" type="password" name="password" size="20" maxlength="20" value="" autocomplete="off"  class="errlogin" /></td></tr>
+         </table>
+         <a class="secondary-link" href="/cgi-bin/wconfig.ha?999">Forgot your Access Code?</a>
+         <script language="javascript" type="text/javascript">
+         <!--
+           document.getElementById("password").focus();
+         //-->
+         </script>
+         <br /><br /><input type="submit" name="Continue" class="cssbtn btnspacer" value="Continue" /><br /><br />
+         <div class="center">
+         <div class="router">
+<img src="/images/NVG589_access_code_location.jpg" alt="" />
+         </div>
+         </div>
+         </form>
+                </div>
+              </div>
+            </div>
+            <div style="clear: both;"></div>
+          </div>
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+      <div id="footer">
+        <div><span class="inner">&copy; 2015 ARRIS Enterprises, Inc. Intellectual Property.</span><span class="sitemap"><a href="/cgi-bin/sitemap.ha">Site Map</a></span></div>
+      </div>
+    </div>
+</body>
+</html>
+
