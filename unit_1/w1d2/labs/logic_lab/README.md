@@ -4,7 +4,7 @@
 
 ### What we are doing
 
-In this lab, we will create and experiment with XCode Playgrounds and take our first foray into writing Swift Code.
+In this lab, we will create and experiment with XCode Playgrounds.
 
 > ***Note:*** _This Lab is designed to be done independently._
 
